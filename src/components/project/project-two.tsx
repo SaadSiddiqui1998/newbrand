@@ -1,0 +1,267 @@
+"use client";
+import React from "react";
+
+const videoClient = [
+  {
+    id: 1,
+    src: "https://www.youtube.com/embed/xUTyiqPY6Oo",
+    type: "video/mp4",
+    BookTitle: "Love And Laughter",
+    Consultant: "Damon Peters",
+    ProjectManager: "Amara Johnson & Ryan Peters",
+    clientname: "Lesvi Ferrel"
+  },
+  {
+    id: 2,
+    src: "https://www.youtube.com/embed/QMirTma0Wf4",
+    type: "video/mp4",
+    BookTitle: "Rising 2 B'Come",
+    Consultant: "Damon Peters",
+    ProjectManager: "Amara Johnson & Melissa",
+    clientname: "Stacey L. Joiner"
+  },
+  {
+    id: 3,
+    src: "https://www.youtube.com/embed/Tv3_r0EMVH4",
+    type: "video/mp4",
+    BookTitle: "Stewart, BC History",
+    Consultant: "Damon Peters",
+    ProjectManager: "Amara Johnson & Ryan Peters",
+    clientname: "Robert A. Eckess"
+  },
+  {
+    id: 4,
+    src: "https://www.youtube.com/embed/fX2J8iMy4z4",
+    type: "video/mp4",
+    BookTitle: "Free Yourself From Pain",
+    Consultant: "Damon Peters",
+    ProjectManager: "Ryan Peters",
+    clientname: "Lesvi Ferrel"
+  },
+  {
+    id: 5,
+    src: "https://www.youtube.com/embed/gWW43Tfa8gA",
+    type: "video/mp4",
+    BookTitle: "The 2023 Elections in Nigeria: Actors, Intrigues, and Winners",
+    Consultant: "Damon Peters",
+    ProjectManager: "Lia Sinclair & Ryan Peters",
+    clientname: "Edward Agbai"
+  },
+  {
+    id: 6,
+    src: "https://www.youtube.com/embed/6T96-bq6_g8",
+    type: "video/mp4",
+    BookTitle: "Thorns are More Deadly",
+    Consultant: "Steve Hayes",
+    ProjectManager: "Lia Sinclair & Ryan Peters",
+    clientname: "Katie Loftis"
+  },
+  {
+    id: 7,
+    src: "https://www.youtube.com/embed/pPa-W6unmv0",
+    type: "video/mp4",
+    BookTitle: "Who will Love me?",
+    Consultant: "Damon Peters",
+    ProjectManager: "Amara Johnson & Ryan Peters",
+    clientname: "John B. Micheal"
+  },
+  {
+    id: 8,
+    src: "https://www.youtube.com/embed/7X_BkleuUsA",
+    type: "video/mp4",
+    BookTitle: " I am a BOY | i am a GIRL",
+    Consultant: "Damon Peters",
+    ProjectManager: "Ryan Peters",
+    clientname: "Pamela Harry"
+  },
+  {
+    id: 9,
+    src: "https://www.youtube.com/embed/mGLHZO-DjRg",
+    type: "video/mp4",
+    BookTitle: "The Well of Hopes: Bloodlines",
+    Consultant: "Damon Peters",
+    ProjectManager: "Lia Sinclair & Ryan Peters",
+    clientname: "Angel Raices"
+  },
+  {
+    id: 10,
+    src: "https://www.youtube.com/embed/P91rheXIDzk",
+    type: "video/mp4",
+    BookTitle: "Fate: The Alpha King and HisFate: The Alpha King and His Unexpected Mate",
+    Consultant: "Damon Peters",
+    ProjectManager: "Samantha Lewis & Ryan Peters",
+    clientname: "Ashlee Griffin"
+  },
+  // {
+  //   id: 11,
+  //   src: "https://www.youtube.com/embed/IsRZv2mR4u0",
+  //   type: "video/mp4",
+  //   BookTitle: "Vetting the Book of Enoch",
+  //   Consultant: "Damon Peters",
+  //   ProjectManager: "Lia Sinclair",
+  //   clientname: "Christopher Allen"
+  // },
+  // {
+  //   id: 12,
+  //   src: "https://www.youtube.com/embed/Jwr-u5HQ9Fg?si=PEZvbrKNR1Y0xUH4",
+  //   type: "video/mp4",
+  //   BookTitle: "There's no middle ground, You will either RUN TO or RUN FROM this book",
+  //   Consultant: "Damon Peters",
+  //   ProjectManager: "Lia Sinclair",
+  //   clientname: "John Bowman"
+  // },
+  // {
+  //   id: 13,
+  //   src: "https://www.youtube.com/embed/p3dCJ_KdqHk?si=il3lcE_7bLVJDGmp",
+  //   type: "video/mp4",
+  //   BookTitle: "Ellas's Songs",
+  //   Consultant: "Damon Peters",
+  //   ProjectManager: "Amara Johnson & Lia Sinclair",
+  //   clientname: "David Van Fleet"
+  // },
+  // {
+  //   id: 14,
+  //   src: "https://www.youtube.com/embed/VsO2MhLTZPk",
+  //   type: "video/mp4",
+  //   BookTitle: "Go Ask Sabrina",
+  //   Consultant: "Damon Peters",
+  //   ProjectManager: "Lia Sinclair",
+  //   clientname: "Sabrina Biamby"
+  // },
+  // {
+  //   id: 15,
+  //   src: "https://www.youtube-nocookie.com/embed/_a6emmDhe7c?si=X8tc5K20NopJcxLV",
+  //   type: "video/mp4",
+  //   BookTitle: "The Other Side (Part 1 & Part 2)",
+  //   Consultant: "Steve Hayes",
+  //   ProjectManager: "Lia Sinclair",
+  //   clientname: "Unique Moore"
+  // },
+  // {
+  //   id: 16,
+  //   src: "https://www.youtube-nocookie.com/embed/Sae1noZeLvg",
+  //   type: "video/mp4",
+  //   BookTitle: "Orthomolecular biohacking: From Pauling to Panfili",
+  //   Consultant: "Steve Hayes",
+  //   ProjectManager: "Lia Sinclair ",
+  //   clientname: "Adolfo Professor Pamphili"
+  // },
+  // {
+  //   id: 17,
+  //   src: "https://www.youtube-nocookie.com/embed/FJgKVI-sAIo",
+  //   type: "video/mp4",
+  //   BookTitle: "Shin Misaki: Future Dark Ages of World War IV",
+  //   Consultant: "Steve Hayes",
+  //   ProjectManager: "Rex Brown ",
+  //   clientname: " Theodore A Anderson"
+  // },
+  // {
+  //   id: 18,
+  //   src: "https://www.youtube-nocookie.com/embed/S0F5k_mP9no ",
+  //   type: "video/mp4",
+  //   BookTitle: "The Tale Of A Phantom Trail",
+  //   Consultant: "Steve Hayes",
+  //   ProjectManager: "Rex Brown",
+  //   clientname: "Phyllis McGillivary"
+  // },
+  // {
+  //   id: 19,
+  //   src: "https://www.youtube-nocookie.com/embed/_muLcViAkZI",
+  //   type: "video/mp4",
+  //   BookTitle: "Forbidden: The Definitive Edition",
+  //   Consultant: "Jenson Walker",
+  //   ProjectManager: "Rex Brown",
+  //   clientname: "Tanna Marie Angers"
+  // },
+  // {
+  //   id: 20,
+  //   src: "https://www.youtube-nocookie.com/embed/fKner3oan7Q",
+  //   type: "video/mp4",
+  //   BookTitle: "From Where Lions Speak",
+  //   Consultant: "Steve Hayes",
+  //   ProjectManager: "Rex Brown",
+  //   clientname: "Douglas P Andonian"
+  // },
+  // {
+  //   id: 21,
+  //   src: "https://www.youtube-nocookie.com/embed/77grNmvBBXU",
+  //   type: "video/mp4",
+  //   BookTitle: "Hebrew And Greek Insights Eight Biblical Words Explained",
+  //   Consultant: "Steve Hayes",
+  //   ProjectManager: "Rex Brown",
+  //   clientname: "Lezlie Ann Watson"
+  // },
+  // {
+  //   id: 22,
+  //   src: "https://www.youtube.com/embed/jBQ1vIbK2zQ?si=DdvEu-V0Q_rG_FgS",
+  //   type: "video/mp4",
+  //   BookTitle: "Das Trevas Para Luz",
+  //   Consultant: "Steve Hayes",
+  //   ProjectManager: "Lia Sinclair",
+  //   clientname: "Miguel De Oliveira"
+  // },
+  // {
+  //   id: 23,
+  //   src: "https://www.youtube.com/embed/DEzkPXPfYRk?si=V7HdYP-l7XBwq6Yl",
+  //   type: "video/mp4",
+  //   BookTitle: "Remembering Dad: The First Year",
+  //   Consultant: "Steve Hayes",
+  //   ProjectManager: "Rex Brown",
+  //   clientname: "Adrea M. Witherspoon"
+  // },
+  // {
+  //   id: 24,
+  //   src: "https://www.youtube.com/embed/7FC8oT9eTPs?si=Yg6pZE18GtbexR3T",
+  //   type: "video/mp4",
+  //   BookTitle: "Fearless Friendships: Why Adults Struggle to Connect and How to Fix it",
+  //   Consultant: "Steve Hayes",
+  //   ProjectManager: "Emily Jones",
+  //   clientname: "Philip A. Grimes, PhD"
+  // },
+  // {
+  //   id: 25,
+  //   src: "https://www.youtube.com/embed/rOtE_fGt1p0?si=2-ahTZuT2qyJLthO",
+  //   type: "video/mp4",
+  //   BookTitle: "Sufficiency of God's Promises: A Biblical Study Journal",
+  //   Consultant: "Steve Hayes",
+  //   ProjectManager: "Emily Jones",
+  //   clientname: "Vernell T. Walton"
+  // }
+];
+
+export default function ProjectTwo() {
+  return (
+    <section className="tp-project-2-area tpproject">
+      <div className="container">
+        <h2 className=" mb-40 pb-5 text-center">VIDEOS TESTIMONIALS</h2>
+      </div>
+      <div className="panels p-relative fix">
+        <div className="panels-container d-flex">
+          {videoClient.map((item) => (
+            <div key={item.id} className="panel">
+              <div className="tp-project-2-item  p-relative">
+                <div className="tp-project-2-thumb object-fit-contain">
+                  <iframe
+                    src={item.src}
+                    title={item.BookTitle}
+                    width="880"
+                    height="700"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                  />
+                </div>
+                <div className="tp-project-2-content">
+                  <span>{item.clientname}</span>
+                  <h4 className="tp-project-2-title-sm">{item.BookTitle}</h4>
+                  <span>Consultant: {item.Consultant}</span>
+                  <span>Project Manager: {item.ProjectManager}</span>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
