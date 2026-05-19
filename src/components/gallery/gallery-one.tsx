@@ -27,14 +27,17 @@ export default function GalleryOne() {
           <div className="col-xl-12">
             <div className="tp-gallery-slider-wrap">
               <div className="swiper-container tp-gallery-slider-active">
-                <Marquee className="tp-gallery-titming" speed={100} direction="left">
+                <Marquee className="tp-gallery-titming" speed={100} direction='left'>
+
                   {galleryImages.map((g, i) => (
+
                     <div key={i}>
                       <div className="tp-gallery-item mr-30">
-                        <Image src={g} alt="gallery-img" width={320} height={450} style={{ height: 'auto' }} />
+                        <Image src={g} alt="gallery-img" style={{ height: 'auto' }} />
                       </div>
                     </div>
                   ))}
+
                 </Marquee>
               </div>
             </div>
