@@ -61,7 +61,7 @@ const menu_data: IMenuDT[] = [
   {
     id: 3,
     title: 'Portfolio',
-    link: '/portfolio-standard',
+    link: '/',
     // portfolio_mega_menus: {
     //   first: {
     //     title: 'PORTFOLIO LIST',
@@ -124,7 +124,7 @@ const menu_data: IMenuDT[] = [
   {
     id: 4,
     title: 'Blog',
-    link: '/blog-modern',
+    link: '/',
     // dropdown_menus: [
     //   { title: 'Modern', link: '/blog-modern' },
     //   { title: 'Classic Sidebar', link: '/blog-classic' },
@@ -238,7 +238,7 @@ export const mobile_menu_data: {
     {
       id: 4,
       title: 'Blog',
-      link: '/blog-modern',
+      link: '/',
       dropdown_menus: [
         { title: 'Modern', link: '/blog-modern' },
         { title: 'Classic Sidebar', link: '/blog-classic' },
@@ -250,7 +250,7 @@ export const mobile_menu_data: {
     {
       id: 5,
       title: 'Contact',
-      link: '/contact',
+      link: '/',
       dropdown_menus: [
         { title: 'Contact', link: '/contact' },
         { title: 'Get IN touch', link: '/contact-2' },
