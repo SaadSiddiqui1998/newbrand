@@ -167,4 +167,4 @@ function servicePanel() {
 
 
 
-export { panelOneAnimation, panelTwoAnimation, studioPanel,servicePanel };
+export { panelOneAnimation, panelTwoAnimation, studioPanel, servicePanel };

@@ -13,10 +13,11 @@ export default function ServiceHero() {
           <div className="col-xl-10">
             <div className="sv-hero-title-box">
               <h4 className="sv-hero-title tp-char-animation">
-                Experience <br /> the best services.
+                Start Your Publishing
+                <br /> Journey Now
               </h4>
               <p className="tp_fade_bottom">
-                Fulfilled direction use continual set him propriety continued.
+                Are you searching for a company with a wide range of Book Publishing Services? You are at the right place. At <a href="https://pinebookpublishing.com/" className="font-bold">Pine Book Publishing</a>, we offer comprehensive services to cater to your needs. From editing to publishing, we have mastered everything. Explore everything you need to kick-start your publishing journey.
               </p>
             </div>
           </div>
@@ -29,14 +30,14 @@ export default function ServiceHero() {
                   data-speed=".7"
                   src={ser_hero}
                   alt="ser_hero-img"
-                  style={{height:"auto"}}
+                  style={{ height: "auto" }}
                 />
               </div>
               <Image
                 className="sv-hero-thumb-shape d-none d-lg-block"
                 src={ser_hero_shape}
                 alt="ser_hero-shape"
-                style={{height:"auto"}}
+                style={{ height: "auto" }}
               />
             </div>
           </div>

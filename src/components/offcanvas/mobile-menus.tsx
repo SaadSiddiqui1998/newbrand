@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import menu_data from "@/data/menu-data";
 import shop_banner from '@/assets/img/menu/shop-menu/banner-1.jpg';
-import port_img from '@/assets/img/menu/portfolio-menu/portfolio.png';
+import port_img from '@/assets/img/menu/portfolio-menu/portfolio.webp';
 
 export default function MobileMenus() {
   const [navTitle, setNavTitle] = React.useState<string>("");
@@ -24,8 +24,8 @@ export default function MobileMenus() {
             <li
               key={menu.id}
               className={`has-dropdown ${menu.home_menus || menu.portfolio_mega_menus
-                  ? "has-homemenu"
-                  : ""
+                ? "has-homemenu"
+                : ""
                 } ${menu.home_menus ? "dropdown-opened" : ""}`}
             >
               <a className="pointer" onClick={() => openMobileMenu(menu.title)}>
@@ -55,6 +55,33 @@ export default function MobileMenus() {
                             </div>
                           </div>
                         ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ) : menu.services_mega_menu ? (
+                <div className="tp-submenu submenu tp-mega-menu" style={{ display: navTitle === menu.title ? "block" : "none" }}>
+                  <div className="tp-megamenu-wrapper">
+                    <div className="tp-megamenu-list">
+                      <h4 className="tp-megamenu-title">Services</h4>
+                      <div className="tp-megamenu-list-wrap">
+                        <ul>
+                          {menu.services_mega_menu.services.map((service) => (
+                            <li key={service.title}>
+                              <Link href={service.link}>{service.title}</Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="tp-megamenu-list tp-megamenu-list-2 mt-30">
+                      <h4 className="tp-megamenu-title">Talk To An Expert Now!</h4>
+                      <div className="tp-megamenu-list-wrap">
+                        <ul>
+                          <li>
+                            <Link href="/contact">Schedule a Call</Link>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>

@@ -33,7 +33,13 @@ export default function GalleryOne() {
 
                     <div key={i}>
                       <div className="tp-gallery-item mr-30">
-                        <Image src={g} alt="gallery-img" style={{ height: 'auto' }} />
+                        <Image
+                          src={g}
+                          alt="gallery-img"
+                          width={400}
+                          height={400}
+                          style={{ height: 'auto' }}
+                        />
                       </div>
                     </div>
                   ))}

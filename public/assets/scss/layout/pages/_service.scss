@@ -117,6 +117,12 @@
         scrollbar-width: none;
     }
 }
+.faq-area-two {
+    & .tp-service-2-accordion-box {
+        height: auto;
+        overflow-y: visible;
+    }
+}
 .tp-service-3{
     &-wrap{
         padding-top: 65px;
@@ -561,6 +567,17 @@
     }
 }
 .sv-hero{
+    &-area{
+        position: relative;
+        overflow: hidden;
+        background:
+            radial-gradient(circle at 4% 0%, rgba(158, 224, 202, 0.58), transparent 28%),
+            linear-gradient(180deg, rgba(16, 81, 68, 0.32) 0%, rgba(158, 224, 202, 0.16) 38%, rgba(255, 255, 255, 0) 78%);
+        & > * {
+            position: relative;
+            z-index: 1;
+        }
+    }
     &-title-box{
         margin-bottom: 90px;
         padding-left: 165px;

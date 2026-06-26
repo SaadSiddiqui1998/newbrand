@@ -21,47 +21,120 @@ const menu_data: IMenuDT[] = [
     //   { title: 'horizontal', link: '/home-12', img: '/assets/img/menu/white-version/home-12.jpg' },
     // ]
   },
-  // {
-  //   id: 2,
-  //   title: 'Pages',
-  //   link: '#',
-  //   pages_mega_menu: {
-  //     first: {
-  //       title: 'LIST TYPES',
-  //       submenus: [
-  //         { title: 'ABOUT US', link: '/about-us' },
-  //         { title: 'FAQ Page', link: '/faq' },
-  //         { title: 'ABOUT ME', link: '/about-me' },
-  //         { title: 'Pricing', link: '/pricing' },
-  //         { title: 'Team Page', link: '/team' },
-  //         { title: 'OUR CLIENTS', link: '/brand' },
-  //         { title: 'Team Details', link: '/team-details' },
-  //         { title: 'Register', link: '/register' },
-  //         { title: 'OUR SERVICES', link: '/service' },
-  //         { title: 'LogIn', link: '/login' },
-  //         { title: 'SERVICES DETAILS', link: '/service-details' },
-  //         { title: 'ERROR PAGE', link: '/error' },
-  //       ]
-  //     },
-  //     second: {
-  //       title: 'Shop Page',
-  //       submenus: [
-  //         { title: 'Shop Page', link: '/shop' },
-  //         { title: 'Shop Details One', link: '/shop-details' },
-  //         { title: 'Shop Details Two', link: '/shop-details-2' },
-  //         { title: 'my account', link: '/account' },
-  //         { title: 'Cart', link: '/cart' },
-  //         { title: 'Checkout', link: '/checkout' },
-  //         { title: 'Wishlist', link: '/wishlist' },
-  //       ]
-  //     },
-
-  //   }
-  // },
+  {
+    id: 2,
+    title: 'About Us',
+    link: '/about-us',
+  },
   {
     id: 3,
+    title: 'Services',
+    link: '/service',
+    services_mega_menu: {
+      services: [
+        {
+          title: 'Book Publishing',
+          desc: 'Bringing your story to the shelves and screens of the world.',
+          link: '/service-details',
+          icon: 'fa-light fa-paper-plane',
+        },
+        {
+          title: 'Book Editing',
+          desc: 'We turn your drafts into masterpieces.',
+          link: '/service-details',
+          icon: 'fa-light fa-file-lines',
+        },
+        {
+          title: 'Proofreading',
+          desc: 'Catching every typo, ensuring perfection.',
+          link: '/service-details',
+          icon: 'fa-light fa-clipboard-check',
+        },
+        {
+          title: 'Book Formatting',
+          desc: 'Giving your words the perfect structure.',
+          link: '/service-details',
+          icon: 'fa-light fa-text-size',
+        },
+        {
+          title: 'Typesetting & Layout',
+          desc: 'Aligning your content with professional precision.',
+          link: '/service-details',
+          icon: 'fa-light fa-object-group',
+        },
+        {
+          title: 'Audio Book',
+          desc: 'Turn your written words into lively audio experiences.',
+          link: '/service-details',
+          icon: 'fa-light fa-microphone-lines',
+        },
+        {
+          title: 'Print On Demand',
+          desc: 'Streamline your book printing process with our expert Print-On-Demand Services.',
+          link: '/service-details',
+          icon: 'fa-light fa-print',
+        },
+        {
+          title: 'Document Processing',
+          desc: 'Simplify your workflows with expert document processing.',
+          link: '/service-details',
+          icon: 'fa-light fa-file-invoice',
+        },
+        {
+          title: 'ISBN & Barcode',
+          desc: 'Secure your book’s identity with our ISBN registration services.',
+          link: '/service-details',
+          icon: 'fa-light fa-barcode',
+        },
+        {
+          title: 'Merchandising',
+          desc: 'Make your personal and business accessories standout with custom merchandising services.',
+          link: '/service-details',
+          icon: 'fa-light fa-shirt',
+        },
+        {
+          title: 'Book Marketing',
+          desc: 'Boost your book’s reach and visibility with our targeted marketing strategies.',
+          link: '/service-details',
+          icon: 'fa-light fa-bullhorn',
+        },
+        {
+          title: "Children's Book Illustration",
+          desc: 'Bring your children’s stories to life with engaging and colorful illustrations.',
+          link: '/service-details',
+          icon: 'fa-light fa-palette',
+        },
+        {
+          title: 'Book Illustration Services',
+          desc: 'Enhance your book’s visual appeal with professional illustration designs.',
+          link: '/service-details',
+          icon: 'fa-light fa-pen-nib',
+        },
+        {
+          title: 'Book Translation',
+          desc: 'Expand your global reach with expert translation in multiple languages.',
+          link: '/service-details',
+          icon: 'fa-light fa-language',
+        },
+      ],
+      experts: [
+        { name: 'Emily Jones', image: '/assets/img/home-01/team/team-1-1.jpg' },
+        { name: 'Steve Hayes', image: '/assets/img/home-01/team/team-1-2.jpg' },
+        { name: 'Rex Brown', image: '/assets/img/home-01/team/team-1-3.jpg' },
+        { name: 'Lia Sinclair', image: '/assets/img/home-01/team/team-1-4.jpg' },
+        { name: 'Jerome Preston', image: '/assets/img/home-01/team/team-1-6.jpg' },
+      ],
+    }
+  },
+  {
+    id: 4,
+    title: 'Packages',
+    link: '/pricing',
+  },
+  {
+    id: 5,
     title: 'Portfolio',
-    link: '/',
+    link: '/portfolio',
     // portfolio_mega_menus: {
     //   first: {
     //     title: 'PORTFOLIO LIST',
@@ -122,7 +195,7 @@ const menu_data: IMenuDT[] = [
     // }
   },
   {
-    id: 4,
+    id: 6,
     title: 'Blog',
     link: '/',
     // dropdown_menus: [
@@ -134,7 +207,7 @@ const menu_data: IMenuDT[] = [
     // ]
   },
   {
-    id: 5,
+    id: 7,
     title: 'Contact',
     link: '/contact',
     // dropdown_menus: [
@@ -205,8 +278,14 @@ export const mobile_menu_data: {
     },
     {
       id: 3,
+      title: 'Packages',
+      link: '/pricing',
+      dropdown_menus: []
+    },
+    {
+      id: 4,
       title: 'Portfolio',
-      link: '/portfolio-standard',
+      link: '/portfolio',
       dropdown_menus: [
         { title: 'Standard', link: '/portfolio-standard' },
         { title: 'Interactive', link: '/home-10' },
@@ -236,7 +315,7 @@ export const mobile_menu_data: {
       ]
     },
     {
-      id: 4,
+      id: 5,
       title: 'Blog',
       link: '/',
       dropdown_menus: [
@@ -248,7 +327,7 @@ export const mobile_menu_data: {
       ]
     },
     {
-      id: 5,
+      id: 6,
       title: 'Contact',
       link: '/',
       dropdown_menus: [

@@ -193,6 +193,17 @@
     }
 }
 .tm-hero{
+    &-area{
+        position: relative;
+        overflow: hidden;
+        background:
+            radial-gradient(circle at 4% 0%, rgba(158, 224, 202, 0.58), transparent 28%),
+            linear-gradient(180deg, rgba(16, 81, 68, 0.32) 0%, rgba(158, 224, 202, 0.16) 38%, rgba(255, 255, 255, 0) 78%);
+        & > * {
+            position: relative;
+            z-index: 1;
+        }
+    }
     &-ptb{
         padding-top: 200px;
         padding-bottom: 80px;

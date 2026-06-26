@@ -25,7 +25,6 @@ export default function AwardTwo() {
               </h2>
               <p>
                 Tired of trying out the same old book publishing companies? At Pine Book Publishing, your success is our priority, and we're committed to helping you achieve your literary goals with confidence and ease, which other self-publishing companies might not offer. With us, you get:
-                <hr></hr>
                 {/* <div className="d-flex gap-5 pb-5">
                   <ul>
                     <li>Affordable Price</li>
@@ -40,6 +39,7 @@ export default function AwardTwo() {
                   </ul>
                 </div> */}
               </p>
+              <hr />
 
             </div>
             <div className="tp-award-2-btn-box">

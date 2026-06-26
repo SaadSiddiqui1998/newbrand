@@ -20,6 +20,10 @@ import FooterTwo from "@/layouts/footers/footer-two";
 // animation
 import { charAnimation, fadeAnimation } from "@/utils/title-animation";
 import { servicePanel } from "@/utils/panel-animation";
+import HeaderFour from "@/layouts/headers/header-four";
+import FooterFour from "@/layouts/footers/footer-four";
+import AwardOne from "@/components/award/award-one";
+import AwardTwo from "@/components/award/award-two";
 
 const ServiceMain = () => {
   useScrollSmooth();
@@ -36,7 +40,7 @@ const ServiceMain = () => {
   return (
     <Wrapper>
       {/* header area start */}
-      <HeaderEleven />
+      <HeaderFour />
       {/* header area end */}
 
       <div id="smooth-wrapper">
@@ -47,26 +51,26 @@ const ServiceMain = () => {
             {/* service hero */}
 
             {/* service area */}
-            <div className="tp-service-5-area sv-service-style pb-70">
+            <div className="tp-service-5-area sv-service-style">
               <div className="container container-1530">
                 <div className="row">
                   <div className="col-xl-12">
-                    <div className="tp-service-5-title-box mb-90">
+                    <div className="tp-service-5-title-box">
                       <span className="ab-inner-subtitle mb-20">
                         <Leaf />
-                        Services
+                        Our Publishing
                       </span>
                       <h4 className="tp-service-5-title">
-                        We strongly believe that only design reinforced by{" "}
-                        <br />
-                        strategy can provide real results.
+                        Services
                       </h4>
+                      <p className="tp_fade_bottom" >At Pine Book Publishing, we take your story from a rough draft to bookshelf-ready with our expert editing,<br></br> publishing, and marketing services.
+                        Whether you want Amazon Self Publishing Services, Lulu Self Publishing,<br></br> or want to get your book published on any other retailer. We have covered all your needs.</p>
                     </div>
                   </div>
                 </div>
-                <div className="tp-service-5-wrap">
+                {/* <div className="tp-service-5-wrap">
                   <ServiceItems />
-                </div>
+                </div> */}
               </div>
             </div>
             {/* service area */}
@@ -76,13 +80,13 @@ const ServiceMain = () => {
             {/* service area */}
 
             {/* brand area */}
-            <div className="tp-brand-4-area pt-120 pb-120">
+            {/* <div className="tp-brand-4-area pt-120 pb-120">
               <div className="container">
                 <div className="row gx-0">
                   <BrandItems />
                 </div>
               </div>
-            </div>
+            </div> */}
             {/* brand area */}
 
             {/* line image slider  */}
@@ -95,7 +99,7 @@ const ServiceMain = () => {
           </main>
 
           {/* footer area */}
-          <FooterTwo topCls="" />
+          <FooterFour />
           {/* footer area */}
         </div>
       </div>

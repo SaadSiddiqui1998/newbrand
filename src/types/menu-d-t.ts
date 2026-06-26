@@ -23,6 +23,18 @@ export interface IMenuDT {
       }[];
     };
   };
+  services_mega_menu?: {
+    services: {
+      title: string;
+      desc: string;
+      link: string;
+      icon: string;
+    }[];
+    experts: {
+      name: string;
+      image: string;
+    }[];
+  };
   portfolio_mega_menus?: {
     first: {
       title: string;

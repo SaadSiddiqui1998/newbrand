@@ -18,7 +18,7 @@ const HeaderMenus = () => {
                         <div className="homemenu-thumb-wrap mb-20">
                           <div className="homemenu-thumb fix">
                             <Link href={home_menu.link}>
-                              <Image style={{ width: "auto", height: "auto" }} src={home_menu.img} alt="home-img" width={250} height={235}/>
+                              <Image style={{ width: "auto", height: "auto" }} src={home_menu.img} alt="home-img" width={250} height={235} />
                             </Link>
                           </div>
                         </div>
@@ -30,6 +30,57 @@ const HeaderMenus = () => {
                       </div>
                     ))}
                   </div>
+                </div>
+              </div>
+            </div>
+          ) : menu.services_mega_menu ? (
+            <div className="tp-submenu submenu tp-mega-menu service-mega-menu">
+              <div className="service-mega-menu__inner">
+                <div className="service-mega-menu__services">
+                  {menu.services_mega_menu.services.map((service) => (
+                    <Link key={service.title} href={service.link} className="service-mega-menu__service">
+                      <span className="service-mega-menu__icon">
+                        <i className={service.icon}></i>
+                      </span>
+                      <span>
+                        <strong>{service.title}</strong>
+                        <em>{service.desc}</em>
+                      </span>
+                    </Link>
+                  ))}
+                </div>
+                <div className="service-mega-menu__side">
+                  <div className="service-mega-menu__block">
+                    <h4>Our Experts</h4>
+                    <div className="service-mega-menu__experts">
+                      {menu.services_mega_menu.experts.map((expert) => (
+                        <div key={expert.name} className="service-mega-menu__expert">
+                          <Image
+                            src={expert.image}
+                            alt={expert.name}
+                            width={76}
+                            height={76}
+                          />
+                          <span>{expert.name}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  <div className="service-mega-menu__cta">
+                    <h4>Talk To An Expert Now!</h4>
+                    <p>
+                      Ready to bring your book to life? Schedule a call with one of our experts now to unlock your book&apos;s potential.
+                    </p>
+                    <Link href="/contact">Schedule a Call</Link>
+                  </div>
+                </div>
+                <div className="service-mega-menu__visual">
+                  <Image
+                    src="/assets/img/menu/portfolio-menu/portfolio.webp"
+                    alt="service menu visual"
+                    width={438}
+                    height={480}
+                  />
                 </div>
               </div>
             </div>
@@ -104,8 +155,8 @@ const HeaderMenus = () => {
                 <div className="tp-megamenu-portfolio p-relative">
                   <div className="tp-megamenu-portfolio-banner">
                     <Image
-                    style={{ width: "100%", height: "auto" }}
-                      src="/assets/img/menu/portfolio-menu/portfolio.png"
+                      style={{ width: "100%", height: "auto" }}
+                      src="/assets/img/menu/portfolio-menu/portfolio.webp"
                       alt="image"
                       width={438}
                       height={480}

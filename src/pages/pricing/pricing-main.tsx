@@ -14,6 +14,9 @@ import FaqAreaTwo from "@/components/faq/faq-area-2";
 import FooterTwo from "@/layouts/footers/footer-two";
 // animation
 import { charAnimation, titleAnimation } from "@/utils/title-animation";
+import HeaderTwo from "@/layouts/headers/header-two";
+import HeaderFour from "@/layouts/headers/header-four";
+import FooterFour from "@/layouts/footers/footer-four";
 
 const PricingMain = () => {
   useScrollSmooth();
@@ -29,7 +32,7 @@ const PricingMain = () => {
   return (
     <Wrapper>
       {/* header area start */}
-      <HeaderEleven />
+      <HeaderFour />
       {/* header area end */}
 
       <div id="smooth-wrapper">
@@ -48,17 +51,16 @@ const PricingMain = () => {
                   <div className="row">
                     <div className="col-xl-12">
                       <div className="tm-hero-content">
-                        <span className="tm-hero-subtitle">Liko Studio</span>
+                        <span className="tm-hero-subtitle">Publishing Packages</span>
                         <h4 className="tm-hero-title tp-char-animation">
-                          Pricing Plans
+                          Want to Publish Your Book at an Affordable Price?
                         </h4>
                       </div>
                       <div className="tm-hero-text">
                         <p className="tp_title_anim">
-                          Choose the right pricing for you and get started{" "}
+                          Pine Book Publishing is here to offer you top-notch publishing services at an affordable price.
                           <br />
-                          with your project.
-                        </p>
+                          We are offering more than just publishing. Explore our packages below!                        </p>
                       </div>
                     </div>
                   </div>
@@ -67,16 +69,16 @@ const PricingMain = () => {
               {/* pricing hero */}
 
               {/* pricing area */}
-              <PricingArea/>
+              <PricingArea />
               {/* pricing area */}
 
               {/* faq area */}
-              <FaqAreaTwo/>
+              <FaqAreaTwo />
               {/* faq area */}
             </main>
 
             {/* footer area */}
-            <FooterTwo topCls="" />
+            <FooterFour />
             {/* footer area */}
           </div>
         </div>
